@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Archana Mol Lalu</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+
+    .fade-in {
+      animation: fadeInUp 0.9s ease-out both;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-gray-100 to-white text-gray-800 min-h-screen">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md py-4">
+    <nav class="container mx-auto flex justify-center space-x-6 text-indigo-600 font-semibold">
+      <a href="index.html" class="hover:text-indigo-800">Home</a>
+      <a href="about.html" class="hover:text-indigo-800">About</a>
+      <a href="projects.html" class="text-indigo-800 font-bold">Projects</a>
+      <a href="skills.html" class="hover:text-indigo-800">Skills</a>
+      <a href="Archanamol_Lalu_Resume.pdf" target="_blank" class="hover:text-indigo-800">Resume</a>
+      <a href="contact.html" class="hover:text-indigo-800">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Projects Section -->
+  <section class="text-center p-10 mt-6 fade-in">
+    <h1 class="text-4xl font-bold text-indigo-700 mb-10">My Projects</h1>
+    <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+      <!-- Project 1 -->
+      <div class="bg-white rounded-xl p-6 shadow hover:shadow-lg transition text-left">
+        <h3 class="text-2xl font-bold text-indigo-600 mb-2">🩰 ChoreScope</h3>
+        <p class="text-gray-700 leading-relaxed">
+          A mobile app for real-time recognition of <strong>Bharatanatyam mudras</strong> using MediaPipe Hands & TensorFlow Lite.
+          The app supports live camera and gallery input, and gives users insights into the cultural significance of each mudra.
+        </p>
+        <p class="mt-2 text-sm text-gray-500"><strong>Tech Used:</strong> MediaPipe, TensorFlow Lite, Android</p>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-white rounded-xl p-6 shadow hover:shadow-lg transition text-left">
+        <h3 class="text-2xl font-bold text-indigo-600 mb-2">🛍️ MyShop – Django eCommerce</h3>
+        <p class="text-gray-700 leading-relaxed">
+          Built during my internship at Cydez Technologies. MyShop is a fully functional <strong>Django-based eCommerce</strong> web app with admin panel, search, product filters, and secure login system.
+        </p>
+        <p class="mt-2 text-sm text-gray-500"><strong>Tech Used:</strong> Django, Tailwind CSS, SQLite, GitHub</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-500 py-6 border-t">
+    © 2025 Archanamol Lalu. All rights reserved.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Archana Mol Lalu | Portfolio</title>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Poppins', sans-serif; }
+
+    .animated-bg {
+      background: linear-gradient(-45deg, #6b46c1, #d53f8c, #667eea, #f6ad55);
+      background-size: 400% 400%;
+      animation: gradientAnimation 15s ease infinite;
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .fade-in {
+      animation: fadeInUp 1s ease-out both;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body class="animated-bg text-white min-h-screen flex flex-col items-center justify-center text-center p-6">
+
+  <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl shadow-2xl p-8 w-full max-w-md fade-in">
+    <img src="profile.jpg" alt="Archanamol Lalu" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-md" />
+    <h1 class="text-4xl font-bold mb-2">Archanamol Lalu</h1>
+    <p class="text-lg text-gray-200 mb-6">BTech S7 CSE Student<br>Aspiring Developer | Designer | Cultural Tech Enthusiast</p>
+
+    <nav class="space-y-3 sm:space-y-0 sm:space-x-4 text-base font-medium">
+      <a href="about.html" class="inline-block px-4 py-2 rounded-full bg-white bg-opacity-20 hover:bg-opacity-40 transition">About</a>
+      <a href="projects.html" class="inline-block px-4 py-2 rounded-full bg-white bg-opacity-20 hover:bg-opacity-40 transition">Projects</a>
+      <a href="skills.html" class="inline-block px-4 py-2 rounded-full bg-white bg-opacity-20 hover:bg-opacity-40 transition">Skills</a>
+      <a href="Archanamol_Lalu_Resume.pdf" target="_blank" class="inline-block px-4 py-2 rounded-full bg-white bg-opacity-20 hover:bg-opacity-40 transition">Resume</a>
+      <a href="contact.html" class="inline-block px-4 py-2 rounded-full bg-white bg-opacity-20 hover:bg-opacity-40 transition">Contact</a>
+    </nav>
+  </div>
+
+  <footer class="text-sm text-white mt-10 opacity-80">
+    © 2025 Archanamol Lalu. All rights reserved.
+  </footer>
+
+</body>
+</html>

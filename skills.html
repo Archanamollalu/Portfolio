@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills | Archanamol Lalu</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+
+    .fade-in {
+      animation: fadeInUp 1s ease-out both;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-gray-100 to-white text-gray-800 min-h-screen">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md py-4">
+    <nav class="container mx-auto flex justify-center space-x-6 text-indigo-600 font-semibold">
+      <a href="index.html" class="hover:text-indigo-800">Home</a>
+      <a href="about.html" class="hover:text-indigo-800">About</a>
+      <a href="projects.html" class="hover:text-indigo-800">Projects</a>
+      <a href="skills.html" class="text-indigo-800 font-bold">Skills</a>
+      <a href="Archanamol_Lalu_Resume.pdf" target="_blank" class="hover:text-indigo-800">Resume</a>
+      <a href="contact.html" class="hover:text-indigo-800">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Skills Section -->
+  <section class="text-center py-16 px-4 fade-in">
+    <h1 class="text-4xl font-bold text-indigo-700 mb-10">My Skills</h1>
+
+    <div class="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-3 gap-6">
+      <div class="bg-white rounded-xl shadow hover:shadow-lg p-4 transition">Python</div>
+      <div class="bg-white rounded-xl shadow hover:shadow-lg p-4 transition">Django</div>
+      <div class="bg-white rounded-xl shadow hover:shadow-lg p-4 transition">HTML & CSS</div>
+      <div class="bg-white rounded-xl shadow hover:shadow-lg p-4 transition">Tailwind CSS</div>
+      <div class="bg-white rounded-xl shadow hover:shadow-lg p-4 transition">Java</div>
+      <div class="bg-white rounded-xl shadow hover:shadow-lg p-4 transition">C Programming</div>
+      <div class="bg-white rounded-xl shadow hover:shadow-lg p-4 transition">Flutter</div>
+      <div class="bg-white rounded-xl shadow hover:shadow-lg p-4 transition">SQLite</div>
+      <div class="bg-white rounded-xl shadow hover:shadow-lg p-4 transition">VS Code</div>
+      <div class="bg-white rounded-xl shadow hover:shadow-lg p-4 transition">Git & GitHub</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-500 py-6 border-t">
+    © 2025 Archanamol Lalu. All rights reserved.
+  </footer>
+
+</body>
+</html>
