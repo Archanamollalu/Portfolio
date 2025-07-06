@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Archanamol Lalu | Portfolio</title>
+  
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f172a;
+      color: white;
+      transition: background 0.7s ease-in-out;
+    }
+
+    .bg-unified {
+      background: url('profile.jpg') no-repeat center center;
+      background-size: cover;
+      position: relative;
+    }
+
+    .bg-unified::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(12px);
+      z-index: 0;
+    }
+
+    .section-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .fade-in {
+      animation: fadeInUp 0.9s ease-out both;
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+
+<body class="transition duration-700 ease-in-out">
+
+  <!-- Navbar -->
+  <header class="bg-slate-900 shadow-md py-4 fixed w-full top-0 z-50">
+    <nav class="container mx-auto flex justify-center space-x-6 text-indigo-300 font-semibold">
+      <a href="#home" class="hover:text-white">Home</a>
+      <a href="#about" class="hover:text-white">About</a>
+      <a href="#projects" class="hover:text-white">Projects</a>
+      <a href="#skills" class="hover:text-white">Skills</a>
+      <a href="Archanamol_Lalu_Resume.pdf" target="_blank" class="hover:text-white">Resume</a>
+      <a href="#contact" class="hover:text-white">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="bg-unified min-h-screen flex flex-col md:flex-row items-center justify-center text-center md:text-left p-6 pt-24">
+    <div class="section-content md:w-1/2 p-4">
+      <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl shadow-2xl p-8 fade-in">
+        <h1 class="text-4xl font-bold mb-2 text-white">Hello,I'm Archanamol Lalu</h1>
+        <p class="text-lg text-gray-200 mb-6">
+          A passionate <strong>Computer Science Engineering</strong> student with a love for technology and culture.<br>
+          Aspiring Developer | Designer | Cultural Tech Enthusiast
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-unified flex justify-center px-4 py-20 fade-in">
+    <div class="section-content bg-white bg-opacity-20 backdrop-blur-md rounded-xl shadow-xl max-w-3xl p-8 text-center">
+      <h2 class="text-4xl font-extrabold text-indigo-300 mb-4">About Me</h2>
+        <p class="text-lg text-gray-200 leading-relaxed">
+          I’m a BTech Computer Science Engineering student at <strong>Amal Jyothi College of Engineering (2022–2026)</strong> who loves learning and building new things.  
+          I'm especially interested in combining technology with culture to create meaningful projects.  
+          I enjoy teamwork, solving problems, and am always eager to learn.  
+          My goal is to grow as a developer while making a positive impact with what I create.
+</p>
+
+      </p>
+      <div class="mt-8 text-left text-gray-300">
+        <p class="mb-1"><strong>📍 Location:</strong> Kottayam, Kerala, India</p>
+        <p class="mb-1"><strong>🎓 Currently:</strong> BTech S7 @ Amal Jyothi College of Engineering</p>
+        <p class="mb-1"><strong>🎯 Interests:</strong> Web Dev, AI, UX Design</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="bg-unified px-4 py-20 fade-in">
+    <div class="section-content max-w-5xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-indigo-300 mb-10">My Projects</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-xl shadow-xl p-6 text-left">
+          <h3 class="text-2xl font-bold text-indigo-200 mb-2"> ChoreoScope</h3>
+          <p class="text-gray-200 leading-relaxed">
+            A mobile application that recognizes Bharatanatyam mudras in real-time using MediaPipe Hands and a CNN-based classifier integrated with TensorFlow Lite.
+            The app supports live camera and gallery input, and gives users insights into the cultural significance of each mudra  — blending classical Indian art with modern AI technology.
+          </p>
+          <p class="mt-2 text-sm text-gray-300"><strong>Tech Used:</strong> MediaPipe, TensorFlow Lite, Android</p>
+          <a href="https://github.com/Archanamollalu/Choreoscope" target="_blank" class="text-blue-400 hover:underline mt-2 inline-block">
+            <i class="fab fa-github mr-1"></i> View Code on GitHub
+          </a>
+
+        </div>
+        <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-xl shadow-xl p-6 text-left">
+          <h3 class="text-2xl font-bold text-indigo-200 mb-2">MyShop – Django eCommerce</h3>
+          <p class="text-gray-200 leading-relaxed">
+            Built during my internship at Cydez Technologies, MyShop is a fully functional eCommerce web application developed using Python and Django. It features secure user authentication, a dynamic admin dashboard for managing products, categories, and orders, as well as intuitive search, category-based filtering, shopping cart functionality, and order tracking.
+          </p>
+          <p class="mt-2 text-sm text-gray-300"><strong>Tech Used:</strong> Python, Django, HTML, CSS, SQLite, Git, Postman</p>
+           <a href="https://github.com/Archanamollalu/MyShop" target="_blank" class="text-blue-400 hover:underline mt-2 inline-block">
+            <i class="fab fa-github mr-1"></i> View Code on GitHub
+           </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="bg-unified py-20 px-4 fade-in">
+    <div class="section-content text-center max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold text-indigo-300 mb-10">My Skills</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
+        <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-xl shadow p-4">Python</div>
+        <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-xl shadow p-4">Django</div>
+        <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-xl shadow p-4">HTML & CSS</div>
+        <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-xl shadow p-4">Tailwind CSS</div>
+        <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-xl shadow p-4">Java</div>
+        <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-xl shadow p-4">C Programming</div>
+        <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-xl shadow p-4">Flutter</div>
+        <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-xl shadow p-4">SQLite</div>
+        <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-xl shadow p-4">VS Code</div>
+        <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-xl shadow p-4">Git & GitHub</div>
+        <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-xl shadow p-4">Machine Learning</div>
+        <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-xl shadow p-4">Postman</div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+<section id="contact" class="bg-unified px-4 py-20 fade-in">
+  <div class="section-content max-w-5xl mx-auto grid md:grid-cols-2 gap-10 bg-white bg-opacity-20 backdrop-blur-md rounded-2xl shadow-xl p-8">
+    
+   <!-- Left: Contact Info -->
+<div class="text-left text-gray-200 space-y-4">
+  <h2 class="text-3xl font-bold text-indigo-300 mb-4">Contact Information</h2>
+
+  <!-- Email -->
+  <p>
+    <i class="fas fa-envelope text-indigo-400 mr-2"></i>
+    <a href="mailto:archanamollalu7@gmail.com" target="_blank" class="text-blue-400 hover:underline">
+      Email
+    </a>
+  </p>
+
+  <!-- GitHub -->
+  <p>
+    <i class="fab fa-github text-indigo-400 mr-2"></i>
+    <a href="https://github.com/Archanamollalu" target="_blank" class="text-blue-400 hover:underline">
+      GitHub
+    </a>
+  </p>
+
+  <!-- LinkedIn -->
+  <p>
+    <i class="fab fa-linkedin text-indigo-400 mr-2"></i>
+    <a href="https://www.linkedin.com/in/archanamol-lalu-6a5814305" target="_blank" class="text-blue-400 hover:underline">
+      LinkedIn
+    </a>
+  </p>
+
+  <!-- Location -->
+  <p>
+    <i class="fas fa-map-marker-alt text-indigo-400 mr-2"></i>
+    Location: Kottayam, Kerala, India
+  </p>
+</div>
+
+
+  
+    <!-- Right: Contact Form -->
+<form action="https://formspree.io/f/xvgrnwdq" method="POST" class="space-y-4">
+  <h2 class="text-3xl font-bold text-indigo-300 mb-4">Send a Message</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <input type="text" name="name" placeholder="Your Name" required class="text-black w-full p-3 rounded-lg bg-slate-800 border border-gray-600 focus:outline-none">
+    <input type="email" name="email" placeholder="Your Email" required class="text-black w-full p-3 rounded-lg bg-slate-800 border border-gray-600 focus:outline-none">
+  </div>
+
+  <input type="text" name="subject" placeholder="Subject" required class="text-black w-full p-3 rounded-lg bg-slate-800 border border-gray-600 focus:outline-none">
+
+  <textarea name="message" placeholder="Message..." rows="4" required class="text-black w-full p-3 rounded-lg bg-slate-800 border border-gray-600 focus:outline-none"></textarea>
+
+  <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300">
+    <i class="fas fa-paper-plane mr-2"></i>Send Message
+  </button>
+</form>
+
+
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-400 py-6 border-t border-gray-700">
+    © 2025 Archanamol Lalu. All rights reserved.
+  </footer>
+
+</body>
+</html>
